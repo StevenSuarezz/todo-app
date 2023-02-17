@@ -6,6 +6,7 @@ import { Button, Container, Flex, HStack, Text } from '@chakra-ui/react'
 import { MenuItem } from 'components/molecules/MenuItem/MenuItem'
 import Link from 'next/link'
 import Hero from 'components/molecules/Hero/Hero'
+import TopBar from 'components/organisms/TopBar/TopBar'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -18,23 +19,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Flex w="100%" flexDirection="row" alignContent="center" p="6px 6px">
-          <Text fontSize="36px" fontWeight="bold" lineHeight="42px" color="#1F79BA" flexGrow={1}>Todo App</Text>
-          <HStack spacing="16px" alignContent="center">
-            <MenuItem>
-              <Link href="/blog">Blog</Link>
-            </MenuItem>
-            <MenuItem>
-              <Link href="/blog">Product</Link>
-            </MenuItem>
-            <MenuItem>
-              <Link href="/blog">Pricing</Link>
-            </MenuItem>
-          </HStack>
-          <Flex marginLeft="82px">
-            <Button>Get Started</Button>
-          </Flex>
-      </Flex>
+      <TopBar />
       <Flex>
         <Hero />
       </Flex>
