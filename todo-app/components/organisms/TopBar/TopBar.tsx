@@ -5,7 +5,7 @@ import React from "react";
 
 export default function TopBar() {
     return (
-            <Flex w="100%" flexDirection="row" alignContent="center" p="8px 16px">
+            <Flex w="100%" flexDirection="row" alignContent="center" p="8px 16px" justifyContent="center">
                 <Text fontSize="36px" fontWeight="bold" lineHeight="42px" color="#1F79BA" flexGrow={1}>Todo App</Text>
                 <HStack spacing="16px" alignContent="center">
                     <MenuItem text="Blog" href="/blog" />

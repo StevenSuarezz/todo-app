@@ -7,6 +7,8 @@ import { MenuItem } from 'components/molecules/MenuItem/MenuItem'
 import Link from 'next/link'
 import Hero from 'components/molecules/Hero/Hero'
 import TopBar from 'components/organisms/TopBar/TopBar'
+import LandingBody from 'components/organisms/LandingBody/LandingBody'
+import LandingFooter from 'components/organisms/LandingFooter/LandingFooter'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -19,9 +21,11 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <TopBar />
-      <Flex>
+      <Flex flexDirection="column" minHeight="100vh">
+        <TopBar />
         <Hero />
+        <LandingBody />
+        <LandingFooter />
       </Flex>
     </>
   )
